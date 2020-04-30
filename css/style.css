@@ -1,0 +1,79 @@
+body,html{
+	margin:0;
+	height:100%;
+	font-family: 'Patrick Hand SC', cursive;
+	font-size:20px;
+	font-weight:bold;
+	background-color:#f4f4f4;
+	line-height:1.8em;
+}
+
+.pimg1, .pimg2, .pimg3{
+	position:relative;
+	opacity:0.80;
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	
+}
+
+.pimg1{
+	background-image:url(../img/bridge.jpg);
+	min-height:100%;
+}
+
+.pimg2{
+	background-image:url(../img/mountain.jpg);
+	min-height:50%;
+}
+
+.pimg3{
+	background-image:url(../img/road.jpg);
+	min-height:50%;
+}
+
+.section{
+	text-align:center;
+	padding:5% 5%;
+
+}
+
+h1{
+	padding:0;
+	margin:0;
+	text-transform:uppercase;
+}
+
+.ptext{
+	position:absolute;
+	text-align:center;
+	top:50%;
+	width:100%;
+	color:white;
+	font-size:2.5em;
+	letter-spacing:0.23em;
+	text-transform:uppercase;
+	opacity:1.0;
+}
+
+.ptext .border{
+	background-color: rgba(0, 0, 0, 0.7);
+	/* opacity:0.7; */
+	padding:0.3em 0.4em;
+	color:white;
+	border-radius:0.1em;
+	
+}
+
+@media(max-width:568px){
+	.pimg1, .pimg2, .pimg3{
+		background-attachment:scroll;
+		border:solid black 3px;
+	}
+	
+	.ptext .border{
+		background-color: rgba(0, 0, 0, 0);;
+		border-radius:0px;
+	}
+}
